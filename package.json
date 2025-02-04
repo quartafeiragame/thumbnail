@@ -1,15 +1,15 @@
 {
-  "name": "thumbnail",
+  "name": "node",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "build": "npm install",
-    "test": "echo \"Error: no test specified\" && exit 1"
+
   },
   "keywords": [],
-  "author": "diego",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "@distube/ytdl-core": "^4.16.0",
