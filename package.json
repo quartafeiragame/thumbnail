@@ -7,7 +7,7 @@
     "start": "node index.js",
   },
   "keywords": [],
-  "author": "",
+  "author": "diego",
   "license": "ISC",
   "dependencies": {
     "@distube/ytdl-core": "^4.16.0",
