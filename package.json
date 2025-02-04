@@ -1,0 +1,20 @@
+{
+  "name": "thumbnail",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module"
+  "scripts": {
+    "start": "node index.js",
+    "build": "npm install"
+  },
+  "keywords": [],
+  "author": "diego",
+  "license": "ISC",
+  "dependencies": {
+    "@distube/ytdl-core": "^4.16.0",
+    "@types/node": "^18.0.6",
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}
