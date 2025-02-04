@@ -1,17 +1,16 @@
-import cors from 'cors';
-import express from 'express';
+const cors = require('cors');
+const express = require('express');
 const app = express();
 const port = 8906;
-import ytdl from '@distube/ytdl-core';
+const ytdl = require('@distube/ytdl-core');
 
 app.use(cors());
 
 
-app.get('/',(req, res) => {
+app.get('/', async(req, res) => {
   const url = req.query.url;
   if (!url) return res.send('No url provided');
-  async function thumb(url) {
-      try {
+  try {
     const info = await ytdl.getInfo(url)
 const thumbnail = info.videoDetails.thumbnails[0].url;
   const imagem = thumbnail.split(".jpg")[0] + ".jpg";
@@ -20,8 +19,7 @@ const thumbnail = info.videoDetails.thumbnails[0].url;
   } catch (error) {
      return res.send(error);
   }
-}
-  thumb(url);
+
   
   });
 
