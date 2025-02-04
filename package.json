@@ -1,12 +1,10 @@
 {
-  "name": "node",
+  "name": "nodejs",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "build": "npm install",
-
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
@@ -15,7 +13,9 @@
     "@distube/ytdl-core": "^4.16.0",
     "@types/node": "^18.0.6",
     "cors": "^2.8.5",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "helmet": "^8.0.0"
   }
 }
+
 
