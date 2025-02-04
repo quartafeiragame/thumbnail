@@ -3,9 +3,10 @@ const express = require('express');
 const app = express();
 const port = 8906;
 const ytdl = require('@distube/ytdl-core');
+const helmet = require('helmet');
 
 app.use(cors());
-
+app.use(helmet());
 
 app.get('/', async(req, res) => {
   const url = req.query.url;
@@ -20,7 +21,7 @@ const thumbnail = info.videoDetails.thumbnails[0].url;
      return res.send(error);
   }
 
-  
+
   });
 
 
